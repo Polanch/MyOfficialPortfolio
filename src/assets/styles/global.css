@@ -1,0 +1,78 @@
+/* Color Palette */
+
+/* ☕ Coffee Black    #2A1B14 */
+/* ☕ Dark Espresso   #3B241A */
+/* ☕ Mocha Brown     #4A2F24 */
+/* ☕ Deep Cocoa      #5B3B2E */
+/* 🤎 Coffee Brown   #6A4634 */
+/* 🤎 Milk Chocolate #7A5642 */
+/* 🤎 Caramel        #93684F */
+/* 🤎 Latte Brown    #A97B5F */
+/* 🥐 Warm Tan       #B58A6D */
+/* 🥐 Cinnamon       #C69A7A */
+/* 🥛 Soft Beige     #D2B39A */
+/* 🥛 Light Latte    #DFC6B3 */
+/* 🍦 Vanilla Cream  #E9DDD1 */
+/* 🍦 Warm Cream     #F2E9E2 */
+/* 🍦 Off White      #F8F3EE */
+/* ☁️ Milk Foam      #FCFAF8 */
+
+@font-face {
+  font-family: 'BlubyKids';
+  src: url('../fonts/BlubyKids-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BubbleTube';
+  src: url('../fonts/BubbleTube-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JustSquash';
+  src: url('../fonts/Just Squash.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lonia';
+  src: url('../fonts/LoniaLatterCursiveSignature- .otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-blubykids: 'BlubyKids', sans-serif;
+  --font-bubbletube: 'BubbleTube', sans-serif;
+  --font-justsquash: 'JustSquash', sans-serif;
+  --font-lonia: 'Lonia', cursive;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-blubykids);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin:0;
+  padding:0;
+}

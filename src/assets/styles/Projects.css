@@ -1,0 +1,443 @@
+/* =============================================
+   Project.css — Coffee Shop Menu Theme
+   Playfair Display + Lato | Your palette
+   ============================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap');
+
+/* ── Section ── */
+.projects-section {
+  background-color: #2A1B14; /* Coffee Black */
+  padding: 6rem 2rem;
+  padding-top:10rem;
+  font-family: 'Lato', sans-serif;
+  min-height: 100vh;
+  position: relative;
+}
+
+.wave-image {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+/* ── Header ── */
+.projects-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.projects-eyebrow {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #A97B5F; /* Latte Brown */
+  margin-bottom: 0.75rem;
+}
+
+.projects-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  color: #F2E9E2; /* Warm Cream */
+  margin: 0 0 0.5rem;
+  line-height: 1.1;
+}
+
+.projects-subtitle {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: #7A5642; /* Milk Chocolate */
+  margin: 0 0 2rem;
+}
+
+.header-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: #A97B5F;
+  font-size: 0.6rem;
+  opacity: 0.7;
+}
+
+/* ── Grid ── */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.75rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ── Card ── */
+.project-card {
+  background-color: #3B241A; /* Dark Espresso */
+  border: 1px solid #4A2F24; /* Mocha Brown */
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;           /* clips thumbnail to card corners */
+  position: relative;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.55);
+}
+
+/* ── Thumbnail ── */
+.card-thumbnail {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.card-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.project-card:hover .card-thumbnail img {
+  transform: scale(1.04);
+}
+
+/* Category badge overlaid on thumbnail */
+.card-category {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.22rem 0.6rem;
+  border-radius: 2px;
+  backdrop-filter: blur(4px);
+}
+
+.tag-fullstack {
+  background-color: rgba(63, 93, 46, 0.85);
+  color: #F2E9E2;
+  border: 1px solid #2e5b39;
+}
+
+.tag-legacy {
+  background-color: rgba(46, 84, 93, 0.85);
+  color: #F2E9E2;
+  border: 1px solid #2e5b39;
+}
+
+.tag-ongoing {
+  background-color: rgba(211, 83, 83, 0.85);
+  color: #F2E9E2;
+  border: 1px solid #FCFAF8;
+}
+
+.tag-backend {
+  background-color: rgba(42, 27, 20, 0.85);
+  color: #DFC6B3;
+  border: 1px solid #4A2F24;
+}
+
+.tag-frontend {
+  background-color: rgba(106, 96, 52, 0.85);
+  color: #E9DDD1;
+  border: 1px solid #6A6044;
+}
+
+.tag-ml {
+  background-color: rgba(59, 36, 26, 0.88);
+  color: #B58A6D;
+  border: 1px solid #4A2F24;
+}
+
+/* ── Card Body ── */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  padding: 1.6rem 1.6rem 1.75rem;
+  flex-grow: 1;
+  /* Subtle inner border inset */
+  box-shadow: inset 0 0 0 1px rgba(169, 123, 95, 0.07);
+}
+
+/* ── Card Top: emoji + title row ── */
+.card-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+}
+
+.card-icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: #F2E9E2; /* Warm Cream */
+  margin: 0;
+  line-height: 1.35;
+}
+
+/* ── Description ── */
+.card-description {
+  font-size: 0.88rem;
+  color: #93684F; /* Caramel */
+  line-height: 1.75;
+  margin: 0;
+  flex-grow: 1;
+}
+
+/* ── Ingredients ── */
+.card-ingredients {
+  border-top: 1px solid #4A2F24;
+  padding-top: 0.9rem;
+}
+
+.ingredients-label {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 0.7rem;
+  color: #A97B5F;
+  text-align: center;
+  margin: 0 0 0.55rem;
+  letter-spacing: 0.08em;
+}
+
+.tags-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tag {
+  font-size: 0.67rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 2px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}
+
+.tag-tool {
+  background-color: rgba(169, 123, 95, 0.15);
+  color: #DFC6B3;
+  border: 1px solid rgba(169, 123, 95, 0.28);
+}
+
+.tag-lang {
+  background-color: rgba(242, 233, 226, 0.07);
+  color: #E9DDD1;
+  border: 1px solid rgba(242, 233, 226, 0.14);
+}
+
+/* ── Visit Button ── */
+.visit-btn {
+  display: inline-block;
+  margin-top: 0.25rem;
+  padding: 0.52rem 1.35rem;
+  background-color: transparent;
+  color: #A97B5F;
+  border: 1px solid #A97B5F;
+  border-radius: 2px;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  align-self: flex-start;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.visit-btn:hover {
+  background-color: #A97B5F;
+  color: #2A1B14;
+}
+
+/* ── Footer ── */
+.projects-footer {
+  text-align: center;
+  margin-top: 3.5rem;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 0.85rem;
+  color: #7A5642;
+  opacity: 0.7;
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .projects-section {
+    padding: 4rem 1.25rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-thumbnail {
+    height: 160px;
+  }
+
+  .card-title {
+    font-size: 1.05rem;
+  }
+}
+
+
+/* =============================================
+   Skills Carousel
+   ============================================= */
+
+.skills-carousel-wrapper {
+  margin-top: 5rem;
+  padding-top: 3rem;
+  border-top: 1px solid #4A2F24;
+}
+
+.carousel-eyebrow {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 0.85rem;
+  color: #7A5642;
+  letter-spacing: 0.12em;
+  margin-bottom: 2rem;
+}
+
+/* Mask edges for fade-in/out effect */
+.carousel-track-container {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
+}
+
+/* The moving strip — duplicated for seamless loop */
+.carousel-track {
+  display: flex;
+  gap: 1rem;
+  width: max-content;
+  animation: carousel-scroll 40s linear infinite;
+}
+
+.carousel-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes carousel-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* ── Skill Card ── */
+.skill-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: #3B241A;
+  border: 1px solid #4A2F24;
+  border-radius: 4px;
+  padding: 0.9rem 1.1rem;
+  min-width: 160px;
+  flex-shrink: 0;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.skill-card:hover {
+  border-color: #A97B5F;
+}
+
+.skill-icon {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
+
+.skill-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.skill-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.skill-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.82rem;
+  color: #F2E9E2;
+  white-space: nowrap;
+}
+
+.skill-group {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.6rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #6A4634;
+}
+
+/* ── Star Rating ── */
+.star-rating {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.star {
+  width: 11px;
+  height: 11px;
+}
+
+.star-label {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.6rem;
+  color: #7A5642;
+  margin-left: 4px;
+}
+
+/* ── Card subtitle ── */
+.card-subtitle {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 300;
+  color: #A97B5F;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  display: block;
+  margin-top: 1px;
+}

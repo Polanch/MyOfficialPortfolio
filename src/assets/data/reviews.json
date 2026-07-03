@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Jane D.",
+    "rating": 5,
+    "comment": "Loved browsing through this site — clean, warm, and full of personality. The coffee shop theme is such a fun touch!",
+    "avatar": "",
+    "date": "2026-05-12"
+  },
+  {
+    "id": 2,
+    "name": "Mark T.",
+    "rating": 4,
+    "comment": "Great portfolio! Would love to see more project breakdowns, but overall a really solid first impression.",
+    "avatar": "",
+    "date": "2026-05-20"
+  },
+  {
+    "id": 3,
+    "name": "Riza P.",
+    "rating": 5,
+    "comment": "The attention to detail in the design is amazing. Feels like a real café menu but for code projects. Love it!",
+    "avatar": "",
+    "date": "2026-06-02"
+  }
+]

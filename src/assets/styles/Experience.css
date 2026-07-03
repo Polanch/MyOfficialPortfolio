@@ -1,0 +1,262 @@
+/* ============================================================
+   Experience.css  –  Timeline Card Design (Vanilla Cream bg #E9DDD1)
+   ============================================================ */
+
+/* ---------- Section ---------- */
+.exp-section {
+  background-color: #E9DDD1;
+  padding: 5rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Jua', sans-serif;
+  position: relative;
+}
+.exp-wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+
+.exp-container {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* ---------- Header ---------- */
+.exp-header {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.exp-header-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Decos live inside .exp-header, positioned relative to it */
+.work-logo {
+  width: 75px;
+  height: 75px;
+  transform: scale(1.5);
+  border-top-right-radius: 70px;
+}
+
+.work-logo:hover {
+  transform: scale(1.5);
+  border-top-right-radius: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.exp-deco-left {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  width: 70px;
+  height: auto;
+  pointer-events: none;
+}
+
+.exp-deco-right {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  width: 60px;
+  height: auto;
+  pointer-events: none;
+
+}
+
+.exp-title {
+  position: relative;
+  width: 375px;
+}
+
+.exp-title h1 {
+  font-family: 'BlubyKids', sans-serif;
+  font-size: 2rem;
+  color: #2A1B14;
+  margin: 0 0 0.6rem;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+}
+
+.exp-subtitle {
+  font-size: 0.88rem;
+  color: #7A5642;
+  font-family: 'Jua', sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  width: 70%;
+}
+
+/* ---------- Timeline wrapper ---------- */
+.exp-timeline {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Single continuous dashed line behind all dots */
+.exp-timeline::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 1.55rem;
+  bottom: 1.55rem;
+  width: 2px;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #A97B5F 0px,
+    #A97B5F 6px,
+    transparent 6px,
+    transparent 12px
+  );
+  z-index: 0;
+}
+
+/* ---------- Each entry ---------- */
+.exp-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding-bottom: 2.5rem;
+  min-height: 100px;
+}
+
+.exp-entry:last-child {
+  padding-bottom: 0;
+}
+
+/* ---------- Spine (dot only) ---------- */
+.exp-spine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  padding-top: 1.55rem;
+  z-index: 1;
+}
+
+.exp-dot {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #E9DDD1;
+  border: 2.5px solid #A97B5F;
+  flex-shrink: 0;
+  z-index: 1;
+  position: relative;
+}
+
+.exp-dot--active {
+  background-color: #6A4634;
+  border-color: #6A4634;
+  box-shadow: 0 0 0 4px rgba(106, 70, 52, 0.15);
+}
+
+/* ---------- Card ---------- */
+.exp-card {
+  position: relative;
+  padding: 1.3rem 1rem 0 0;
+  flex: 1;
+}
+
+/* Company logo — anchored top-right */
+.exp-card-logo {
+  position: absolute;
+  top: 1.3rem;
+  right: 0;
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  opacity: 0.85;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Period label */
+.exp-period {
+  display: block;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  color: #A97B5F;
+  margin-bottom: 0.5rem;
+}
+
+/* Role / job title */
+.exp-role {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2A1B14;
+  margin: 0 0 0.3rem;
+  line-height: 1.35;
+  padding-right: 4rem;
+}
+
+/* Company name */
+.exp-company {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #6A4634;
+  margin: 0 0 0.1rem;
+  padding-right: 4rem;
+}
+
+/* Location */
+.exp-location {
+  font-size: 0.75rem;
+  color: #A97B5F;
+  margin: 0 0 0.75rem;
+  font-style: italic;
+}
+
+/* Bullet points */
+.exp-bullets {
+  margin: 0.6rem 0 0;
+  padding-left: 1.1rem;
+  list-style: disc;
+}
+
+.exp-bullets li {
+  font-size: 0.85rem;
+  color: #5B3B2E;
+  line-height: 1.65;
+  margin-bottom: 0.35rem;
+}
+
+.exp-bullets li:last-child {
+  margin-bottom: 0;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 480px) {
+  .exp-title h1 {
+    font-size: 1.6rem;
+  }
+
+  .exp-role {
+    font-size: 1rem;
+  }
+
+  .exp-card-logo {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .exp-dot {
+    transition: none;
+  }
+}
+
