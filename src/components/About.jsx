@@ -323,6 +323,8 @@ function PageThree() {
   );
 }
 
+const API_URL = import.meta.env.VITE_API_URL ?? '';
+
 function About() {
   const [page, setPage] = useState(1);
   const [reviews, setReviews] = useState([]);
@@ -336,7 +338,7 @@ function About() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    fetch("/api/reviews")
+    fetch(`${API_URL}/api/reviews`)
       .then((res) => res.json())
       .then((data) => { setReviews(data); setLoading(false); })
       .catch(() => setLoading(false));
@@ -384,7 +386,7 @@ function About() {
     };
 
     try {
-      const res = await fetch("/api/reviews", {
+      const res = await fetch(`${API_URL}/api/reviews`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newReview),
