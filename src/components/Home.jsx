@@ -75,7 +75,7 @@ function Home() {
     <section id="home" className="home">
       <div className="left-home">
         <h1>
-          hi, i'm el-m<br />
+          hi, i'm johnlloyd<br />
           <span>full-stack software developer <img src={heart} alt="Heart icon" className="heart-icon" /></span>
         </h1>
         <p className="hero-subheading">
