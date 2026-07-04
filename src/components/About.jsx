@@ -72,8 +72,8 @@ function PageOne() {
           to support them.
         </p>
         <p className="story-paragraph">
-          My goal once I earn my first big salary, I will treat my grandmother into buying new teeth and ofcourse buy a new computer cause my laptop is on life support.
-          I will then bring both of them to Hongkong as that is their life long dream. Me on the other hand, I am bonified otaku so I dream of coming to Japan.
+          My goal once I earn my first big salary, I will treat my grandmother into buying new teeth and of course buy a new computer cause my laptop is on life support.
+          I will then bring both of them to Hong Kong as that is their life long dream. Me on the other hand, I am bona fide otaku so I dream of coming to Japan.
         </p>
 
         <div className="pull-quote">
@@ -81,8 +81,8 @@ function PageOne() {
         </div>
 
         <p className="story-paragraph">
-          I don't want to reject  my innerchild. It may come out as being childsish but I think this charm of mine is what keeps me from making fun ideas and creative works.
-          It also keeps me from being depressed. Being happy and innocent on the harsh reality of life is being blind, but it has it perks to keep me atleast sane.
+          I don't want to reject my inner child. It may come out as being childish but I think this charm of mine is what keeps me from making fun ideas and creative works.
+          It also keeps me from being depressed. Being happy and innocent on the harsh reality of life is being blind, but it has its perks to keep me at least sane.
         </p>
       </div>
 
@@ -158,7 +158,7 @@ function PageTwo() {
             It was a keyboard phone so you can imagine how cool that was. The screen was barely 2 inch and I can't even see the whole picture of what I was browsing.
           </p>
           <p className="fp-body-text">
-            And then my grandmother bought a broadband. I was so excietd and learned how to register a surfing load on it with a hundered pesos. Only to find out that my hard earned allowance I saved, would only last for an hour.
+            And then my grandmother bought a broadband. I was so excited and learned how to register a surfing load on it with a hundred pesos. Only to find out that my hard earned allowance I saved, would only last for an hour.
             It said unlimited but it was a lie. I was so mad but I ended up loading another hundred only to browse youtube for merely 30 minutes.
           </p>
         </div>
@@ -185,7 +185,7 @@ function PageTwo() {
             When I got into highschool, I basically became the tech-guy that everyone goes to when their device breaks. I even fix refrigerators and televisions, well not really but I tried. 
           </p>
           <p className="fp-body-text">
-            Internet even opened more of my curiosity and I got into so much social media that I started dwelving myself into wstern contents more than local.<br/> <br/>
+            Internet even opened more of my curiosity and I got into so much social media that I started delving myself into western contents more than local.<br/> <br/>
             Then I got addicted to video games and learned english through communicating with online friends.
           </p>
         </div>
@@ -205,7 +205,7 @@ function PageTwo() {
           <span className="fp-kicker">TOO LONG TO READ</span>
           <h4 className="fp-small-headline">6 Months Tutorial Hell</h4>
           <p className="fp-mini-text">
-            I really wanted to get a carreer in software development but the industry was so packed that I could barely land one.
+            I really wanted to get a career in software development but the industry was so packed that I could barely land one.
           </p>
         </div>
 
@@ -214,7 +214,7 @@ function PageTwo() {
           <span className="fp-kicker">Please Stay</span>
           <h4 className="fp-small-headline">I Went Places to Places</h4>
           <p className="fp-mini-text">
-            I left the province and lived with my other relatives in Manila and I finally have the chance and applied to big companies liek Accenture.
+            I left the province and lived with my other relatives in Manila and I finally have the chance and applied to big companies like Accenture.
           </p>
         </div>
 
@@ -226,12 +226,12 @@ function PageTwo() {
 /* ── PAGE 3: Certificates & Achievements ── */
 function PageThree() {
   const otherCerts = [
-    { id: 1, label: "Robotics Competition",      issuer: "Regional Award"          },
+    { id: 1, label: "Lyceum Robotics",      issuer: "Regional Award"          },
     { id: 2, label: "Udemy — Web Development",   issuer: "Udemy Certificate"       },
-    { id: 3, label: "OJT Completion",             issuer: "On-the-Job Training"     },
-    { id: 4, label: "Certificate 4",              issuer: "Issuing Body"            },
-    { id: 5, label: "Certificate 5",              issuer: "Issuing Body"            },
-    { id: 6, label: "Certificate 6",              issuer: "Issuing Body"            },
+    { id: 3, label: "Certificate of Completion - CICS Faculty",             issuer: "OJT Advisor - CSU"     },
+    { id: 4, label: "Certificate of Commendation - Junior Dev Internship",              issuer: "Eksperto Team"            },
+    { id: 5, label: "CISCO Academy - Networking Basics",              issuer: "CISCO Academy"            },
+    { id: 6, label: "CISCO Academy - Programming",              issuer: "CISCO Academy"            },
   ];
 
   return (
@@ -247,7 +247,7 @@ function PageThree() {
       <div className="certif-featured-row">
         <div className="certif-featured-meta">
           <span className="fp-kicker">FEATURED CERTIFICATE</span>
-          <h2 className="certif-featured-title">Accenture</h2>
+          <h2 className="certif-featured-title">ACNAmplifAI - FullStack Development</h2>
           <p className="fp-body-text">
             Issued by Accenture Philippines. This certificate will be uploaded once the physical copy is available.
           </p>
