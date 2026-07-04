@@ -196,7 +196,7 @@ function PageTwo() {
             Instead of wasting my time doing the self-paced modules issued by my school, I did my own resource learning and went straight to Udemy and Cisco academy to learn programming and networking.            
             </p>
           <p className="fp-body-text">
-            I wanted to pursue networking but it was so expensive because you need to buy your own equipments. Unline web development, I can already do basics of it and began learning frameworks.  
+            I wanted to pursue networking but it was so expensive because you need to buy your own equipments. Unlike web development, I can already do basics of it and began learning frameworks.  
           </p>
         </div>
 
@@ -305,8 +305,9 @@ function About() {
   const wordCount = countWords(form.comment);
 
   const ALLOWED_TYPES = ["image/jpeg", "image/png", "image/webp"];
-  const MAX_BYTES = 500 * 1024; // 500 KB
+  const MAX_BYTES = 10 * 1024 * 1024; // 10 MB input cap
   const MAX_DIM = 512;
+  const QUALITY = 0.80;
 
   const handleAvatarUpload = (e) => {
     const file = e.target.files?.[0];
@@ -318,7 +319,7 @@ function About() {
       return;
     }
     if (file.size > MAX_BYTES) {
-      setError("Image is too large. Please use a photo under 500 KB.");
+      setError("Image is too large. Please use a photo under 10 MB.");
       e.target.value = "";
       return;
     }
@@ -332,7 +333,7 @@ function About() {
       canvas.width  = Math.round(img.width  * scale);
       canvas.height = Math.round(img.height * scale);
       canvas.getContext("2d").drawImage(img, 0, 0, canvas.width, canvas.height);
-      const compressed = canvas.toDataURL("image/jpeg", 0.82);
+      const compressed = canvas.toDataURL("image/jpeg", QUALITY);
       setForm((prev) => ({ ...prev, avatarPreview: compressed }));
       setError("");
     };
