@@ -7,6 +7,13 @@ import preview4 from "../assets/previews/preview4.jpg";
 import preview5 from "../assets/previews/preview5.jpg";
 import preview6 from "../assets/previews/preview6.jpg";
 import preview7 from "../assets/previews/preview7.jpg";
+import projectIcon1 from "../assets/icons/project1.png";
+import projectIcon2 from "../assets/icons/project2.png";
+import projectIcon3 from "../assets/icons/project3.png";
+import projectIcon4 from "../assets/icons/project4.png";
+import projectIcon5 from "../assets/icons/project5.png";
+import projectIcon6 from "../assets/icons/project6.png";
+import projectIcon7 from "../assets/icons/project7.png";
 const projects = [
   {
     id: 1,
@@ -18,7 +25,7 @@ const projects = [
     tools: ["Node.js"],
     languages: ["HTML", "CSS", "JavaScript", "Git", "SoraAI"],
     link: "https://polanch.github.io/BambooGrove/home.html",
-    icon: <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32"></svg>,
+    icon: <img src={projectIcon1} alt="Bamboo Grove icon" width="32" height="32" />,
     thumbnail: preview1,
   },
   {
@@ -31,7 +38,7 @@ const projects = [
     tools: ["Laravel", "Node.js", "Tailwind", "MySQL"],
     languages: ["HTML", "CSS", "PHP", "JavaScript"],
     link: "https://cicsportal.csuaparri.net/",
-    icon: <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32"></svg>,
+    icon: <img src={projectIcon2} alt="CICS Portal icon" width="32" height="32" />,
     thumbnail: preview2,
   },
   {
@@ -44,7 +51,7 @@ const projects = [
     tools: ["Laravel", "MySQL", "Dockerfile"],
     languages: ["HTML", "CSS", "JavaScript"],
     link: "https://smartpaybeta.onrender.com",
-    icon: <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32"></svg>,
+    icon: <img src={projectIcon3} alt="SmartPay icon" width="32" height="32" />,
     thumbnail: preview3,
   },
   {
@@ -57,7 +64,7 @@ const projects = [
     tools: ["Laravel", "MySQL"],
     languages: ["HTML", "PHP", "CSS", "JavaScript"],
     link: "https://yametshirt-shopdemo.onrender.com",
-    icon: <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32"></svg>,
+    icon: <img src={projectIcon4} alt="Yame Shop icon" width="32" height="32" />,
     thumbnail: preview4,
   },
   {
@@ -70,7 +77,7 @@ const projects = [
     tools: ["React", "Node.js"],
     languages: ["HTML", "CSS", "JavaScript"],
     link: "https://polanch.github.io/ContactsApplication/",
-    icon: <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32"></svg>,
+    icon: <img src={projectIcon5} alt="Contacts App icon" width="32" height="32" />,
     thumbnail: preview5,
   },{
     id: 6,
@@ -82,7 +89,7 @@ const projects = [
     tools: ["Laravel", "MySQL", "Node.js", "Git"],
     languages: ["HTML", "CSS", "JavaScript","PHP"],
     link: "https://github.com/Polanch/DailyEggspress",
-    icon: <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32"></svg>,
+    icon: <img src={projectIcon6} alt="Daily Eggspress icon" width="32" height="32" />,
     thumbnail: preview6,
   },{
     id: 7,
@@ -94,7 +101,7 @@ const projects = [
     tools: ["Photoshop", "Apache", "Canva"],
     languages: ["C++", "PHP", "Javascript"],
     link: "https://drive.google.com/file/d/1W_plrGf13Oaaah7BrU3MriGK9O6MvooY/view?usp=sharing",
-    icon: <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32"></svg>,
+    icon: <img src={projectIcon7} alt="TitoBrews icon" width="32" height="32" />,
     thumbnail: preview7,
   },
 ];
