@@ -304,14 +304,39 @@ function About() {
 
   const wordCount = countWords(form.comment);
 
+  const ALLOWED_TYPES = ["image/jpeg", "image/png", "image/webp"];
+  const MAX_BYTES = 500 * 1024; // 500 KB
+  const MAX_DIM = 512;
+
   const handleAvatarUpload = (e) => {
     const file = e.target.files?.[0];
     if (!file) return;
-    const reader = new FileReader();
-    reader.onload = () => {
-      setForm((prev) => ({ ...prev, avatarPreview: reader.result }));
+
+    if (!ALLOWED_TYPES.includes(file.type)) {
+      setError("Only JPEG, PNG, or WebP images are allowed.");
+      e.target.value = "";
+      return;
+    }
+    if (file.size > MAX_BYTES) {
+      setError("Image is too large. Please use a photo under 500 KB.");
+      e.target.value = "";
+      return;
+    }
+
+    const img = new Image();
+    const objectUrl = URL.createObjectURL(file);
+    img.onload = () => {
+      URL.revokeObjectURL(objectUrl);
+      const scale = Math.min(1, MAX_DIM / Math.max(img.width, img.height));
+      const canvas = document.createElement("canvas");
+      canvas.width  = Math.round(img.width  * scale);
+      canvas.height = Math.round(img.height * scale);
+      canvas.getContext("2d").drawImage(img, 0, 0, canvas.width, canvas.height);
+      const compressed = canvas.toDataURL("image/jpeg", 0.82);
+      setForm((prev) => ({ ...prev, avatarPreview: compressed }));
+      setError("");
     };
-    reader.readAsDataURL(file);
+    img.src = objectUrl;
   };
 
   const handleSubmit = async (e) => {
