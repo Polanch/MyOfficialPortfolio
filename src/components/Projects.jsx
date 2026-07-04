@@ -1,5 +1,12 @@
 import "../assets/styles/Projects.css";
 import wave5 from "../assets/images/wave5.svg";
+import preview1 from "../assets/previews/preview1.jpg";
+import preview2 from "../assets/previews/preview2.jpg";
+import preview3 from "../assets/previews/preview3.jpg";
+import preview4 from "../assets/previews/preview4.jpg";
+import preview5 from "../assets/previews/preview5.jpg";
+import preview6 from "../assets/previews/preview6.jpg";
+import preview7 from "../assets/previews/preview7.jpg";
 const projects = [
   {
     id: 1,
@@ -12,7 +19,7 @@ const projects = [
     languages: ["HTML", "CSS", "JavaScript", "Git", "SoraAI"],
     link: "https://polanch.github.io/BambooGrove/home.html",
     icon: <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32"></svg>,
-    thumbnail: "/src/assets/previews/preview1.jpg",
+    thumbnail: preview1,
   },
   {
     id: 2,
@@ -25,7 +32,7 @@ const projects = [
     languages: ["HTML", "CSS", "PHP", "JavaScript"],
     link: "https://cicsportal.csuaparri.net/",
     icon: <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32"></svg>,
-    thumbnail: "/src/assets/previews/preview2.jpg",
+    thumbnail: preview2,
   },
   {
     id: 3,
@@ -38,7 +45,7 @@ const projects = [
     languages: ["HTML", "CSS", "JavaScript"],
     link: "https://smartpaybeta.onrender.com",
     icon: <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32"></svg>,
-    thumbnail: "/src/assets/previews/preview3.jpg",
+    thumbnail: preview3,
   },
   {
     id: 4,
@@ -51,7 +58,7 @@ const projects = [
     languages: ["HTML", "PHP", "CSS", "JavaScript"],
     link: "https://yametshirt-shopdemo.onrender.com",
     icon: <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32"></svg>,
-    thumbnail: "/src/assets/previews/preview4.jpg",
+    thumbnail: preview4,
   },
   {
     id: 5,
@@ -64,7 +71,7 @@ const projects = [
     languages: ["HTML", "CSS", "JavaScript"],
     link: "https://polanch.github.io/ContactsApplication/",
     icon: <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32"></svg>,
-    thumbnail: "/src/assets/previews/preview5.jpg",
+    thumbnail: preview5,
   },{
     id: 6,
     drinkName: "Daily Eggspress",
@@ -76,7 +83,7 @@ const projects = [
     languages: ["HTML", "CSS", "JavaScript","PHP"],
     link: "https://github.com/Polanch/DailyEggspress",
     icon: <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32"></svg>,
-    thumbnail: "/src/assets/previews/preview6.jpg",
+    thumbnail: preview6,
   },{
     id: 7,
     drinkName: "TitoBrews App",
@@ -88,7 +95,7 @@ const projects = [
     languages: ["C++", "PHP", "Javascript"],
     link: "https://drive.google.com/file/d/1W_plrGf13Oaaah7BrU3MriGK9O6MvooY/view?usp=sharing",
     icon: <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32"></svg>,
-    thumbnail: "/src/assets/previews/preview7.jpg",
+    thumbnail: preview7,
   },
 ];
 
