@@ -20,6 +20,7 @@ const experienceData = [
     bullets: [
       "Trained for 2 months under the Spring Framework and completed the Codility Assessment and Java Bootcamp.",
       "Trained an additional month in Front-End Development using the React framework and JavaScript.",
+      "Trained on a Fullstack operation using RESTful APIs and followed a backlog instruction to emulate a real-world project.",
       "Passed with a final grade that satisfies the P2/Mettl assesment score"
     ],
     logo: AccentureLogo,
@@ -75,7 +76,7 @@ const experienceData = [
     company: "Cagayan II Electric Cooperative, Inc.",
     location: "Cagayan, PH",
     bullets: [
-      "Acted as frontline customer service for handling complaints and uncooperative consumers.",
+      "Acted as an office assistant and performed clerical tasks such as filing, data entry, and document management.",
     ],
     logo: CagayanECLogo,
     logoAlt: "Cagayan II Electric Cooperative logo",
