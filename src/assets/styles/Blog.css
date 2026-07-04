@@ -1,0 +1,54 @@
+.blog-unavailable {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #2C1A0E;
+  gap: 1.25rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.blog-kicker {
+  color: #A97B5F;
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.blog-unavailable h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  color: #F2E9E2;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.blog-unavailable p {
+  font-size: 1rem;
+  color: #93684F;
+  max-width: 360px;
+  margin: 0;
+  line-height: 1.7;
+}
+
+.blog-back-btn {
+  margin-top: 0.5rem;
+  padding: 0.65rem 1.75rem;
+  background: transparent;
+  border: 1.5px solid #A97B5F;
+  color: #F2E9E2;
+  font-family: 'Playfair Display', serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.blog-back-btn:hover {
+  background: #A97B5F;
+  color: #2C1A0E;
+}
