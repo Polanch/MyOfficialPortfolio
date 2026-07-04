@@ -223,102 +223,60 @@ function PageTwo() {
   );
 }
 
-/* ── PAGE 3: Newspaper Book Review Column ── */
+/* ── PAGE 3: Certificates & Achievements ── */
 function PageThree() {
-  const books = [
-    {
-      id: 1,
-      title: "Put Book Title Here",
-      genre: "GENRE HERE",
-      rating: 4,
-      blurb:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
-      price: "₱000.00",
-    },
-    {
-      id: 2,
-      title: "Put Book Title Here",
-      genre: "GENRE HERE",
-      rating: 5,
-      blurb:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.",
-      price: "₱000.00",
-    },
-    {
-      id: 3,
-      title: "Put Book Title Here",
-      genre: "GENRE HERE",
-      rating: 4,
-      blurb:
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.",
-      price: "₱000.00",
-    },
+  const otherCerts = [
+    { id: 1, label: "Robotics Competition",      issuer: "Regional Award"          },
+    { id: 2, label: "Udemy — Web Development",   issuer: "Udemy Certificate"       },
+    { id: 3, label: "OJT Completion",             issuer: "On-the-Job Training"     },
+    { id: 4, label: "Certificate 4",              issuer: "Issuing Body"            },
+    { id: 5, label: "Certificate 5",              issuer: "Issuing Body"            },
+    { id: 6, label: "Certificate 6",              issuer: "Issuing Body"            },
   ];
 
   return (
-    <div className="books-page">
+    <div className="certif-page">
 
       <div className="front-page-banner">
-        <span>LITERARY SECTION</span>
-        <span>BOOKS & CULTURE DESK</span>
-        <span>WEEKEND EDITION</span>
+        <span>ACHIEVEMENTS EDITION</span>
+        <span>CERTIFICATIONS &amp; AWARDS</span>
+        <span>SPECIAL EDITION</span>
       </div>
 
-      <div className="books-page-layout">
-
-        {/* Left: tall feature column */}
-        <div className="books-feature-col">
-          <span className="fp-kicker">PROFILE</span>
-          <h2 className="books-feature-headline">
-            From Code to<br />Chapters
-          </h2>
-          <div className="books-feature-photo">
-            <span>Add Author Photo</span>
-          </div>
+      {/* ── Featured: Accenture ── */}
+      <div className="certif-featured-row">
+        <div className="certif-featured-meta">
+          <span className="fp-kicker">FEATURED CERTIFICATE</span>
+          <h2 className="certif-featured-title">Accenture</h2>
           <p className="fp-body-text">
-            <span className="drop-cap">W</span>
-            riting became my hobby when I was in highschool. I wrote wattpad books, and I read a lot of light novels. I end up having eyebags because of how I stay up all night finishing a whole series.
-            I hate to admit it but, I am basically a book nerd and an otaku at the same time.
+            Issued by Accenture Philippines. This certificate will be uploaded once the physical copy is available.
           </p>
-          <p className="fp-body-text">
-            I write fantasy novels back in the day but now I am inspired by light novels that japanese writers do. I want to make an app later that translate my book into japanese style so that I might get the chance to be scouted by a publishing company in japan.
-          </p>
-          <div className="pull-quote books-pull-quote">
-            "Writing is a form of my imagination"
-          </div>
         </div>
-
-        {/* Right: review column, stacked like a books section */}
-        <div className="books-review-col">
-          <div className="review-col-header">
-            <span className="fp-kicker">NOW AVAILABLE</span>
-            <h3 className="review-col-title">This Week's Releases</h3>
-          </div>
-
-          {books.map((book, i) => (
-            <article key={book.id} className="book-review-row">
-              <div className="book-review-cover">
-                <span>Cover</span>
-              </div>
-              <div className="book-review-info">
-                <span className="fp-book-genre">{book.genre}</span>
-                <h4 className="book-review-title">{book.title}</h4>
-                <div className="book-review-stars">
-                  {[...Array(5)].map((_, s) => (
-                    <span key={s} className={`mini-star ${s < book.rating ? "filled" : ""}`}>★</span>
-                  ))}
-                </div>
-                <p className="book-review-blurb">{book.blurb}</p>
-                <div className="book-review-footer">
-                  <span className="fp-book-price">{book.price}</span>
-                  <button type="button" className="fp-book-btn">Read More</button>
-                </div>
-              </div>
-            </article>
-          ))}
+        <div className="certif-featured-img">
+          <span>Accenture Certificate</span>
+          <p>— image coming soon —</p>
         </div>
-
       </div>
+
+      <div className="certif-section-rule">
+        <span className="fp-kicker">OTHER CERTIFICATIONS</span>
+      </div>
+
+      {/* ── 6 smaller certs ── */}
+      <div className="certif-grid">
+        {otherCerts.map((cert) => (
+          <div key={cert.id} className="certif-card">
+            <div className="certif-img-placeholder">
+              <span>Image</span>
+            </div>
+            <div className="certif-card-body">
+              <p className="certif-card-label">{cert.label}</p>
+              <span className="certif-card-issuer">{cert.issuer}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+
     </div>
   );
 }
