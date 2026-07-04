@@ -63,7 +63,7 @@ function Header() {
         ))}
       </nav>
       <div className="contact-me">
-        <button>
+        <button onClick={() => document.getElementById('footer')?.scrollIntoView({ behavior: 'smooth' })}>
           Contact Me
           <img src={talkicon} alt="Talk Icon" />
         </button>
