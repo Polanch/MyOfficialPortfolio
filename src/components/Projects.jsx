@@ -181,6 +181,15 @@ const skills = [
   )},{ name: "SonarQube", rating: 3.8, max: 5, group: "Other", icon: (
     <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="12" fill="#4E9BCD" opacity=".15"/><path d="M9 19c2-6 5-9 9-9" stroke="#4E9BCD" strokeWidth="2" strokeLinecap="round" fill="none"/><circle cx="20" cy="9" r="2.5" fill="#4E9BCD"/></svg>
   )},
+  { name: "Vercel", rating: 4.3, max: 5, group: "Other", icon: (
+    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="12" fill="#000" opacity=".08"/><polygon points="16,8 26,24 6,24" fill="#000" opacity=".75"/></svg>
+  )},
+  { name: "Render", rating: 4.0, max: 5, group: "Other", icon: (
+    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="12" fill="#46E3B7" opacity=".15"/><path d="M11 22 L11 13 Q11 9 16 9 Q21 9 21 14 Q21 18 16 18 L11 18" stroke="#46E3B7" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg>
+  )},
+  { name: "Cloudflare", rating: 4.1, max: 5, group: "Other", icon: (
+    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="12" fill="#F6821F" opacity=".12"/><path d="M22 18.5c.7 0 1.3-.5 1.3-1.2 0-.6-.4-1.1-1-1.2.1-.2.1-.4.1-.6 0-1.7-1.4-3-3.1-3-.4 0-.8.1-1.2.3C17.6 11.8 16.4 11 15 11c-2 0-3.6 1.6-3.6 3.5 0 .1 0 .3.1.4-.9.2-1.5 1-1.5 1.9 0 1 .8 1.7 1.8 1.7H22z" fill="#F6821F" opacity=".8"/></svg>
+  )},
 ];
 
 function StarRating({ rating, max = 5 }) {
