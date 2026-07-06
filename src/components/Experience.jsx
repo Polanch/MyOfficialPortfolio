@@ -5,7 +5,7 @@ import ELLogo from "../assets/images/El-logo.png";
 import CSULogo from "../assets/images/CSU-logo.png";
 import EkspertoLogo from "../assets/images/Eksperto-logo.png";
 import CagayanECLogo from "../assets/images/CagayanEC-logo.png";
-import WorkLogo from "../assets/icons/menu4.png";
+import WorkLogo from "../assets/icons/work.png";
 import wave4 from "../assets/images/wave4.svg";
 import LeftSplash from "../assets/icons/left-splash2.png";
 import RightSplash from "../assets/icons/right-splash2.png";

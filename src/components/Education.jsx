@@ -3,7 +3,7 @@ import "../assets/styles/Education.css";
 import CSULogo from "../assets/images/CSU-logo.png";
 import AMALogo from "../assets/images/AMA-logo.png";
 import SPSALogo from "../assets/images/SPSA-logo.png";
-import EduLogo from "../assets/icons/menu3.png";
+import EduLogo from "../assets/icons/education.png";
 import LeftSplash from "../assets/icons/left-splash.png";
 import RightSplash from "../assets/icons/right-splash.png";
 import wave2 from "../assets/images/wave2.svg";

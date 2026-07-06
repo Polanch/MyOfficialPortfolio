@@ -879,17 +879,44 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.4rem;
-  color: #8a7a65;
-  font-family: 'Playfair Display', serif;
-  font-size: 1rem;
-  letter-spacing: 0.05em;
+  overflow: hidden;
 }
 
-.certif-featured-img p {
+.certif-featured-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.certif-img-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8a7a65;
+  font-family: 'Playfair Display', serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  height: 100%;
+  width: 100%;
+}
+
+.certif-view-btn {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.4rem 1rem;
+  border: 1.5px solid #1A1A1A;
+  font-family: 'Playfair Display', serif;
   font-size: 0.78rem;
-  opacity: 0.6;
-  margin: 0;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #1A1A1A;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.certif-view-btn:hover {
+  background: #1A1A1A;
+  color: #f0ebe0;
 }
 
 /* ── Section rule ── */
@@ -908,6 +935,14 @@
 .certif-card {
   border: 1px solid #C9BFA8;
   overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: box-shadow 0.2s;
+}
+
+.certif-card:hover {
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
 }
 
 .certif-img-placeholder {
@@ -917,10 +952,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.certif-img-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.certif-img-placeholder .certif-img-fallback {
   color: #a89880;
   font-family: 'Playfair Display', serif;
   font-size: 0.85rem;
   letter-spacing: 0.06em;
+  position: absolute;
 }
 
 .certif-card-body {

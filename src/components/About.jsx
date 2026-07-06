@@ -226,12 +226,13 @@ function PageTwo() {
 /* ── PAGE 3: Certificates & Achievements ── */
 function PageThree() {
   const otherCerts = [
-    { id: 1, label: "Lyceum Robotics",      issuer: "Regional Award"          },
-    { id: 2, label: "Udemy — Web Development",   issuer: "Udemy Certificate"       },
-    { id: 3, label: "Certificate of Completion - CICS Faculty",             issuer: "OJT Advisor - CSU"     },
-    { id: 4, label: "Certificate of Commendation - Junior Dev Internship",              issuer: "Eksperto Team"            },
-    { id: 5, label: "CISCO Academy - Networking Basics",              issuer: "CISCO Academy"            },
-    { id: 6, label: "CISCO Academy - Programming",              issuer: "CISCO Academy"            },
+    { id: 2, label: "Lyceum Robotics",                                        issuer: "Regional Award"                          },
+    { id: 3, label: "DevNet Associate",                                        issuer: "Lynn Bloomer - CISCO Networking Academy" },
+    { id: 4, label: "Certificate of Completion - CICS Faculty",                issuer: "OJT Advisor - CSU"                       },
+    { id: 5, label: "Certificate of Commendation - Junior Dev Internship",     issuer: "Eksperto Team"                           },
+    { id: 6, label: "Cybersecurity Essentials",                                issuer: "Lynn Bloomer - CISCO Networking Academy" },
+    { id: 7, label: "CCNAv7: Enterprise Networking, Security, and Automation", issuer: "Lynn Bloomer - CISCO Networking Academy" },
+    { id: 8, label: "CPP - Advanced Programming C++",                          issuer: "Lynn Bloomer - CISCO Networking Academy" },
   ];
 
   return (
@@ -249,12 +250,26 @@ function PageThree() {
           <span className="fp-kicker">FEATURED CERTIFICATE</span>
           <h2 className="certif-featured-title">ACNAmplifAI - FullStack Development</h2>
           <p className="fp-body-text">
-            Issued by Accenture Philippines. This certificate will be uploaded once the physical copy is available.
+            Issued by Accenture Philippines.
           </p>
+          <a
+            className="certif-view-btn"
+            href="/certificates/certificate1.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View PDF
+          </a>
         </div>
         <div className="certif-featured-img">
-          <span>Accenture Certificate</span>
-          <p>— image coming soon —</p>
+          <img
+            src="/certificates/certificate1.jpg"
+            alt="Accenture ACNAmplifAI Certificate"
+            onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.nextSibling.style.display = 'flex'; }}
+          />
+          <div className="certif-img-fallback" style={{ display: 'none' }}>
+            <span>— image coming soon —</span>
+          </div>
         </div>
       </div>
 
@@ -262,18 +277,31 @@ function PageThree() {
         <span className="fp-kicker">OTHER CERTIFICATIONS</span>
       </div>
 
-      {/* ── 6 smaller certs ── */}
+      {/* ── Other certs ── */}
       <div className="certif-grid">
         {otherCerts.map((cert) => (
-          <div key={cert.id} className="certif-card">
+          <a
+            key={cert.id}
+            className="certif-card"
+            href={`/certificates/certificate${cert.id}.pdf`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div className="certif-img-placeholder">
-              <span>Image</span>
+              <img
+                src={`/certificates/certificate${cert.id}.jpg`}
+                alt={cert.label}
+                onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.nextSibling.style.display = 'flex'; }}
+              />
+              <div className="certif-img-fallback" style={{ display: 'none' }}>
+                <span>Image</span>
+              </div>
             </div>
             <div className="certif-card-body">
               <p className="certif-card-label">{cert.label}</p>
               <span className="certif-card-issuer">{cert.issuer}</span>
             </div>
-          </div>
+          </a>
         ))}
       </div>
 
