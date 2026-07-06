@@ -11,7 +11,7 @@ const educationData = [
   {
     id: 1,
     period: "2025 – Present",
-    degree: "Masters of Science in Information Technology",
+    degree: "Master of Science in Information Technology",
     school: "Cagayan State University",
     location: "Aparri, Cagayan",
     description: "Advancing expertise in IT research, systems design, and emerging technologies.",
