@@ -28,7 +28,7 @@
 }
 .edu-logo{
   width: 75px;
-  height: 75px;
+  height: auto;
   transform: scale(1.5);
   border-top-right-radius: 60px;
 }

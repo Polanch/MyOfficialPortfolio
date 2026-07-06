@@ -45,7 +45,7 @@
 /* Decos live inside .exp-header, positioned relative to it */
 .work-logo {
   width: 75px;
-  height: 75px;
+  height: auto;
   transform: scale(1.5);
   border-top-right-radius: 70px;
 }
