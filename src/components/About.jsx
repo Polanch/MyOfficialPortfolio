@@ -73,7 +73,7 @@ function PageOne() {
         </p>
         <p className="story-paragraph">
           My goal once I earn my first big salary, I will treat my grandmother into buying new teeth and of course buy a new computer cause my laptop is on life support.
-          I will then bring both of them to Hong Kong as that is their life long dream. Me on the other hand, I am bona fide otaku so I dream of coming to Japan.
+          I will then bring both of them to Hong Kong as that is their life long dream. Me on the other hand, I am a bona fide otaku so I dream of coming to Japan.
         </p>
 
         <div className="pull-quote">
@@ -82,7 +82,7 @@ function PageOne() {
 
         <p className="story-paragraph">
           I don't want to reject my inner child. It may come out as being childish but I think this charm of mine is what keeps me from making fun ideas and creative works.
-          It also keeps me from being depressed. Being happy and innocent on the harsh reality of life is being blind, but it has its perks to keep me at least sane.
+          It also keeps me from being depressed. Like they said, ignorance is bliss.
         </p>
       </div>
 
