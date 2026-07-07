@@ -350,12 +350,10 @@
   }
 
   .foot-deco-right { 
-    right: -10px;
     height: 230px;
     top: -100px;
   }
   .foot-deco-left { 
-    left: -20px;
     height: 150px;
     top: -70px;
   }
@@ -363,7 +361,6 @@
 
 @media (max-width: 560px) {
   .foot-deco-right { 
-    right: -10px;
     height: 160px;
     top: -60px;
   }
