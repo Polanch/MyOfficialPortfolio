@@ -248,7 +248,7 @@ function PageThree() {
       <div className="certif-featured-row">
         <div className="certif-featured-meta">
           <span className="fp-kicker">FEATURED CERTIFICATE</span>
-          <h2 className="certif-featured-title">ACNAmplifAI - FullStack Development</h2>
+          <h2 className="certif-featured-title">Accenture Tech AmplifAI - FullStack Development</h2>
           <p className="fp-body-text">
             Issued by Accenture Philippines.
           </p>
