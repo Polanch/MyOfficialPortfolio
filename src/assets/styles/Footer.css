@@ -47,7 +47,7 @@
 }
 .foot-deco-right { 
   right: 0;
-  top: -50px;
+  top: -90px;
 }
 
 /* ── Body ── */
@@ -321,7 +321,11 @@
   }
 
   .footer-decos {
-    height: 200px;
+    height: 100px;
+  }
+  .foot-deco-right { 
+    right: 0;
+    top: -70px;
   }
 }
 
@@ -335,7 +339,7 @@
   }
 
   .footer-decos {
-    height: 140px;
+    height: 40px;
   }
 
   .footer-bottom {
@@ -343,5 +347,16 @@
     gap: 0.5rem;
     text-align: center;
     padding: 1rem 1.5rem 2rem;
+  }
+
+  .foot-deco-right { 
+    right: 0;
+    height: 150px;
+    top: -60px;
+  }
+  .foot-deco-left { 
+    left: -20px;
+    height: 150px;
+    top: -70px;
   }
 }
