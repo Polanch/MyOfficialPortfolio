@@ -136,7 +136,7 @@
 
 /* ── Column headings ── */
 .footer-col-heading {
-  font-family: var(--font-bubbletube);
+  font-family: 'Jua', sans-serif;
   font-size: 1.1rem;
   color: #FCFAF8;
   margin: 0 0 0.6rem;
